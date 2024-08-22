@@ -24,7 +24,9 @@ public class Image {
     @GeneratedValue(strategy = GenerationType.UUID)
     private String id;
     @Column(name = "image_name")
-    private Long name;
+    private String name;
+    @Column
+    private Long size;
     @Column
     @Enumerated(EnumType.STRING)
     private ImageExtension extension;
@@ -34,7 +36,7 @@ public class Image {
     @Column
     private String tags;
     @Column
-    @Lob /* Faz referência a arquivo*/
+    @Lob /* Faz referência a arquivo */
     private byte[] file;
 
 }
