@@ -2,8 +2,10 @@ package com.suhmoraes.imageliteapi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 @SpringBootApplication
+@EnableJpaAuditing /*Habilita o o Auditing Listener */
 public class ImageliteapiApplication {
 
 	public static void main(String[] args) {
