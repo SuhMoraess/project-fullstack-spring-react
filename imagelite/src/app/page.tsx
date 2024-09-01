@@ -1,11 +1,11 @@
-import { Template } from "@/components/Template";
+import { Template } from "@/components";
 
 export default function Home() {
   return (
     <>
-      <Template children={undefined}>
-        
-      </Template>
+    <Template children={undefined}>
+      
+    </Template>
     </>
   )
 }

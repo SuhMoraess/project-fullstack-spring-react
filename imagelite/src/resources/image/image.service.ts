@@ -9,8 +9,10 @@ class ImageService {
         if(!response.ok) {
            throw new Error("Erro ao carregar as imagens");
         }
+
         return await response.json();
     }
 }
 
+// react hook -> useState()
 export const useImageService = () => new ImageService();
